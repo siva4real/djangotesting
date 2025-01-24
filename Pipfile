@@ -4,11 +4,14 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-djangorestframework = "*"
 markdown = "*"
 django-filter = "*"
 django = "*"
 gunicorn = "*"
+firebase-admin = "*"
+fcm-django = "*"
+djangorestframework = "*"
+channels = "*"
 
 [dev-packages]
 

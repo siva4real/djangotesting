@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['192.168.1.35', '3.107.74.17','3.107.191.27']
 # Application definition
 
 INSTALLED_APPS = [
+    'channels',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,8 +40,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'python_project',
+    'fcm_django',
     'rest_framework',
 ]
+
+ASGI_APPLICATION = 'djangoproject.asgi.application'
+
+FCM_DJANGO_SETTINGS = {
+    "FCM_SERVER_KEY": "your-fcm-server-key-here"
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
