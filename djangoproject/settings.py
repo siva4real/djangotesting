@@ -40,15 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'python_project',
-    'fcm_django',
     'rest_framework',
 ]
 
 ASGI_APPLICATION = 'djangoproject.asgi.application'
 
-FCM_DJANGO_SETTINGS = {
-    "FCM_SERVER_KEY": "your-fcm-server-key-here"
-}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
